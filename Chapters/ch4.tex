@@ -1,0 +1,621 @@
+\section{Algebra at last}
+\begin{questions}
+	\question Consider the lightswitch group shown in Figure 2.8. Let $L$ stand for the action of flipping the left switch and $R$ stand for the action of flipping the right switch.
+	\begin{parts}
+		\part Which of the following equations are true and which are false in this group?
+		\begin{solution}
+			\par $LRRRR = RRL$
+			\par $LR=RLRLRL$
+			\par $L\not = RR$
+			\par $R^8 = R^{100}$
+		\end{solution}
+
+		\part Let $N$ stand for the non-action (leaving the switches untouched). Which of the following equations are true?
+		\begin{solution}
+			\par $(LNR)^2 \not = LNR$
+			\par $RL \not = N$
+			\par $(LNR)^3 = R^3L^3$
+			\par $NN = N$
+			\par $R^4 = N$
+			\par $LRLR = N$
+		\end{solution}
+		
+		\part What is the smallest power or $R$ that equals $N$?
+		\begin{solution}
+			\par $2$
+		\end{solution}
+
+		\part What is the smallest power or $L$ that equals $N$?
+		\begin{solution}
+			\par $2$
+		\end{solution}
+
+		\part What is the smallest power or $RL$ that equals $N$?
+		\begin{solution}
+			\par $2$
+		\end{solution}
+
+		\part What is the smallest power or $LR$ that equals $N$?
+		\begin{solution}
+			\par $2$
+		\end{solution}
+	\end{parts}
+	
+	\question 
+	\begin{parts}
+		\part Apply the transformations in Definition 4.1 to the lightswitch Cayley diagram in Figure 2.8.
+		
+		\part Create a multiplication table for the lightswitch group
+		\begin{solution}
+			\[
+				\begin{array}{|c|c|c|c|}
+				\hline
+				e & L & R & LR\\
+				\hline
+				L & e & LR & R\\
+				\hline
+				R & LR & e & L\\
+				\hline
+				LR & R & L & e\\
+				\hline
+				\end{array}
+			\]
+		\end{solution}
+	\end{parts}
+
+	\question Each part below describes a set with a binary operation on it. For each one, determine whether it is commutative and whether it is associative.
+	\begin{parts}
+		\part the addition operation on the set of all whole numbers
+		\begin{solution}
+			\par commutative and associative
+		\end{solution}
+
+		\part the subtraction operation on the set of all whole numbers
+		\begin{solution}
+			\par not commutative and not associative
+		\end{solution}
+		
+		\part the multiplication operation on the set of positive real numbers
+		\begin{solution}
+			\par commutative and associative
+		\end{solution}
+
+		\part the division operation on the set of positive real numbers
+		\begin{solution}
+			\par not commutative and not associative
+		\end{solution}
+		
+		\part the exponentiation operation on the set of positive whole numbers (that is, the operation written $a^b$)
+		\begin{solution}
+			\par not commutative and not associative
+		\end{solution}
+	\end{parts}
+
+	\question The Cayley diagrams for two groups are shown here, the cyclic group $C_5$ on the left and the Quaternion group $Q_4$ on the right.
+	\begin{parts}
+		\part The red arrow in the diagram for $C_5$ represents multiplication wby what element?
+		\begin{solution}
+			\par $\cdot a$
+		\end{solution}
+		
+		\part What is $a^3 \cdot a$ in $C_5$?
+		\begin{solution}
+			\par $a^4$
+		\end{solution}
+		
+		\part What is $a^3 \cdot a\cdot a$ in $C_5$?
+		\begin{solution}
+			\par $e$
+		\end{solution}
+		
+		\part If $1$ is the identity element, then wat do red arrows in the diagram for $Q_4$ represent? What do blue arrows represent?
+		\begin{solution}
+			\par red $= \cdot i$
+			\par blue $= \cdot j$
+		\end{solution}
+		
+		\part What is $i^2$? What is $j\cdot i$?
+		\begin{solution}
+			\par $i^2 = -1$, $j\cdot i = k$
+		\end{solution}
+		
+		\part What is $i\cdot j\cdot j$?
+		\begin{solution}
+			\par $-i$
+		\end{solution}
+	\end{parts}
+	
+	\question Using the Cayley diagrams from Exercise 4.4, answer the following questions.
+	\begin{parts}
+		\part How do you use the diagram of $C_5$ to multiply $x\cdot a^2$ in $C_5$, for any element $x$?
+		\begin{solution}
+			\par Rotate two turns.
+		\end{solution}
+		
+		\part How do you use the diagram of $Q_4$ to multiply $x\cdot k$ in $Q_4$, for any element $x$?
+		\begin{solution}
+			\par Notice how $k = j\cdot i$, then $\cdot k$ means one has to follow a blue arrow, and then a red arrow.
+		\end{solution}
+	\end{parts}
+	
+	\question Create a multiplication table for each of the following Cayley diagrams.
+	\begin{parts}
+		\part $C_5$, as shown on the left of Exercise 4.4. Use the template given here.
+		\begin{solution}
+			\[
+				\begin{array}{|c|c|c|c|c|}
+				\hline
+				e & a & a^2 & a^3 & a^4\\
+				\hline
+				a & a^2 & a^3 & a^4 & e\\
+				\hline
+				a^2 & a^3 & a^4 & e & a\\
+				\hline
+				a^3 & a^4 & e & a & a^2\\
+				\hline
+				a^4 & e & a & a^2 & a^3\\
+				\hline
+				\end{array}
+			\]
+		\end{solution}
+		
+		\part $Q_4$, the quaternion group with eight elements, as shown on the right of Exercise 4.5. Use the template given here.
+		\begin{solution}
+			\[
+				\begin{array}{|c|c|c|c|c|c|c|c|}
+				\hline
+				1 & i & j & k & -1 & -i & -j & -k\\
+				\hline
+				i & -1 & k & -j & -i & 1 & -k & j\\
+				\hline
+				j & -k & -1 & i & -j & k & 1 & -i\\
+				\hline
+				k & j & -i & -1 & -k & -j & i & 1\\
+				\hline
+				-1 & -i & -j & -k & 1 & i & j & k\\
+				\hline
+				-i & 1 & -k & j & i & -1 & k & -j\\
+				\hline
+				-j & k & 1 & -i & j & -k & -1 & i\\
+				\hline
+				-k & -j & i & 1 & k & j & -i & -1\\
+				\hline
+				\end{array}
+			\]
+		\end{solution}
+
+		\part $A_4$, the alternating group with twelve elements:
+		\begin{solution}
+			\[
+				\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				e & a & b & c & d & a^2 & b^2 & c^2 & d^2 & x & y & z\\
+				\hline
+				a & a^2 & c^2 & d^2 & b^2 & e & y & x & z & b & d & c\\
+				\hline
+				b & d^2 & b^2 & a^2 & c^2 & y & e & z & x & a & c & d\\
+				\hline
+				c & b^2 & d^2 & c^2 & a^2 &x & z & e & y & d & b & a\\
+				\hline
+				d & c^2 & a^2 & b^2 & d^2 & z & x & y & e & c & a & b\\
+				\hline
+				a^2 & e & x & z & y & a & d & b & c & c^2 & b^2 & d^2\\
+				\hline 
+				b^2 & x & e & y & z & c & b & d & a & d^2 & a^2 & c^2\\
+				\hline
+				c^2 & z & y & e & x & d & a & c & b & a^2 & d^2 & b^2\\
+				\hline
+				d^2 & y & z & x & e & b & c & a & d & b^2 & c^2 & a^2\\
+				\hline
+				x & c & d & a & b & b^2 & a^2 & d^2 & c^2 & e & z & y\\
+				\hline
+				y & b & a & d & c & d^2 & c^2 & b^2 & a^2 & z & e & x\\
+				\hline
+				z & d & c & b & a & c^2 & d^2 & a^2 & b^2 & y & x & e\\
+				\hline
+				\end{array}
+			\]
+		\end{solution}
+	\end{parts}
+
+	\question It is possible to suggest the full multiplication table for an infinite group by showing just part of it. Fill in the following partial table for the operation of addition on the set of all whole numbers; the ellipses indicate the table continues infinitely in all directions.
+
+	\question Exercises 2.4 through 2.8 of Chapter 2 asked you to draw Cayley diagrams for three groups. Use the diagrams you drew to make multiplication tables for those same groups. Note that if your diagram is not yet a diagram of actions, you may need to apply the transformation in Definition 4.1.
+	
+	\question Exercises 2.18 and 2.19 of Chapter 2 asked you to find the pattern describing the sequence of Cayley diagrams for the ``n-gon puzzle.'' I mentioned in that exercise that the family of groups describing such puzzles are called the dihedral groups. You will study them in detail in Chapter 5, and this exercise previews some of that material.
+	\par Find the pattern decsribing the sequence of multiplication tables for those same groups. You might consider the following steps.
+	\begin{parts}
+		\part Create multiplication tables from the Cayley diagrams for triangle, square, and regular pentagon puzzles.
+		\begin{solution}
+			\par Triangle
+			\[
+				\begin{array}{|c|c|c|c|c|c|}
+				\hline
+				e & r & r^2 & f & rf & r^2f\\
+				\hline
+				r & r^2 & e & rf & r^2f & f\\
+				\hline
+				r^2 & e & r & r^2f & f & rf\\
+				\hline 
+				f & r^2f & rf & e & r^2 & r\\
+				\hline
+				rf & f & r^2f & r & e & r^2\\
+				\hline
+				r^2f & rf & f & r^2 & r & e\\
+				\hline
+				\end{array}
+			\]
+			
+			\par Square
+			\[
+				\begin{array}{|c|c|c|c|c|c|c|c|}
+				\hline
+				e & r & r^2 & r^3 & f & rf & r^2f & r^3f\\
+				\hline
+				r & r^2 & r^3 & e & rf & r^2f & r^3f & f\\
+				\hline
+				r^2 & r^3 & e & r & r^2f & r^3f & f & rf\\
+				\hline
+				r^3 & e & r & r^2 & r^3f & f & rf & r^2f\\
+				\hline 
+				f & r^3f & r^2f & rf & e & r^3 & r^2 & r\\
+				\hline
+				rf & f & r^3f & r^2f & r & e & r^3 & r^2\\
+				\hline
+				r^2f & rf & f & r^3f & r^2 & r & e & r^3\\
+				\hline
+				r^3f & r^2f & rf & f & r^3 & r^2 & r & e\\
+				\hline
+				\end{array}
+			\]
+			\par Notice how smaller squares can be found in the large square. The Cayley-graph has an inner and outer circle. 
+		\end{solution}
+	\end{parts}
+
+	\question Consider te following multiplication table that displays an binary operation.
+	\begin{parts}
+		\part Explain succinctly why the binary operation is not associative. Can you write your answer as one equation?
+		\begin{solution}
+			\par Consider $A\cdot A\cdot B$, then $A\cdot (A\cdot B) = A\cdot e = A$ while $(A\cdot A)\cdot B = e \cdot B = B$
+		\end{solution}
+		
+		\part Does the operation have inverses?
+		\begin{solution}
+			\par Yes, but they are not unique. (See also Exercise 4.11)
+		\end{solution}
+	\end{parts}
+
+	\question Consider the following multiplication table that displays a binary operation.
+	\begin{parts}
+		\part Explain succinctly why the binary operation does not have inverses. Can you write your answers as one equation?
+		\begin{solution}
+			\par Notice how $3$ is the identity element. But notice how there is no inverse for $2$ and inverse for $1$.
+		\end{solution}
+		
+		\part Is the operation associative?
+		\begin{solution}
+			\par Yes.
+		\end{solution}
+	\end{parts}
+
+	\question Consider the following multiplication table that displays a binary operation.
+	\begin{parts}
+		\part Does this operation have inverses? Justify your answer.
+		\begin{solution}
+			\par No, $x$ and $y$ have no inverses.
+		\end{solution}
+
+		\part Is the operation associative? Justify your answer.
+		\begin{solution}
+			\par Seems like it.
+		\end{solution}
+	\end{parts}
+	
+	\question For each multiplication table below, explain why it does not depict a group.
+	\begin{parts}
+		\part Not associative, $(4\cdot 2)\cdot 3 = 1\cdot 3 = 3$ while $4\cdot (2\cdot 3) = 4\cdot e = 4$.
+		\part $a,b,c$ have no inverses.
+		\part Not associative, $(c\cdot a)\cdot c = c\cdot c = e$ while $c\cdot (a\cdot c) = c\cdot a = c$.
+		\part There is no identity.
+	\end{parts}
+	
+	\question The following multiplication table does not depict a binary operation on the set $\{e,x,y\}$. The reason is part of the definition of a binary operation; we would say that this binary operation lacks \textbf{closure}. Can you spot the problem and explain it in your own words?
+	\begin{solution}
+		\par $y\cdot x = s\not \in \{ e,x,y\}$.
+	\end{solution}
+
+	\question Why can the same element not appear twice in any row of a group's multiplication table? Does this restriction also apply to columns?
+	\begin{solution}
+		\par If $a\cdot b = a\cdot c$ then $b=c$, since $a^{-1}\cdot a\cdot b = c \Rightarrow b = c$.
+		\par The same rule applies for columns. $a\cdot b = c\cdot b \Rightarrow a=c$.
+	\end{solution}
+
+	\question Exercises \ldots
+	
+	\question When crating a multiplication table for a group, if you try to include two different identity elements, what goes wrong? What does this lead you to conclude about groups?
+	\begin{solution}
+		\par Then the multiplication table will have the same element appearing twice in a row and column. Because $e\cdot b = \tilde e\cdot b \Rightarrow e=\tilde e$.
+	\end{solution}
+
+	\question Explain why a Cayley diagram must be connected. That is, why must there be a path from every node to every node?
+	\begin{solution}
+		\par If this is not the case, then some element will appear twice in a row or column.
+		\par Different motivation, the identity element would not be connected to everything.
+	\end{solution}
+	
+	\question Complete each of the following multiplication tables so that it depicts a group. There is only one way to do so, if we require $0$ to be the identity element in each table. Then search Group Explorer's group librrary to determine the names for the groups the tables represent.
+	\begin{solution}
+		\begin{parts}
+			\part $C_2$
+			\[
+				\begin{array}{|c|c|}
+					\hline
+					0 & 1\\
+					\hline
+					1 & 0\\
+					\hline
+				\end{array}
+			\]
+			
+			\part $C_3$
+			\[
+				\begin{array}{|c|c|c|}
+					\hline
+					0 & 1 & 2\\
+					\hline
+					1 & 2 & 0\\
+					\hline
+					2 & 0 & 1\\
+					\hline
+				\end{array}
+			\]
+			
+			\part $C_1 = \{ 0\}$
+			\[
+				\begin{array}{|c|}
+					\hline
+					0 \\
+					\hline
+				\end{array}
+			\]
+			
+			\part $C_4$
+			\[
+				\begin{array}{|c|c|c|c|}
+					\hline
+					0 & 1 & 2 & 3\\
+					\hline
+					1 & 2 & 3 & 0\\
+					\hline
+					2 & 3 & 0 & 1\\
+					\hline
+					3 & 0 & 1 & 2\\
+					\hline
+				\end{array}
+			\]
+			
+			\part Looks like $V_4$?
+			\[
+				\begin{array}{|c|c|c|c|}
+					\hline
+					0 & 1 & 2 & 3\\
+					\hline
+					1 & 3 & 0 & 2\\
+					\hline
+					2 & 0 & 3 & 1\\
+					\hline
+					3 & 2 & 1 & 0\\
+					\hline
+				\end{array}
+			\]
+		\end{parts}
+	\end{solution}
+
+	\question The following table can be completed in more than one way, and still have the result depict a group. Find all possible such completions of the table, again using $0$ as the identity element. How many did you find? Search Group Explorer's group library to determine the names for the groups each of your resulting tables represents.
+	
+	
+	\question From Exercise 4.19 part (a) you can conclude that there is only one pattern for a group containing two elements. This is because the only difference between the multiplication table you computed and that of any other group with two elements will be the names of those elements. So the pattern of interactions among elements (or colors if we were to color the cells of the table) would be no different.
+	\begin{parts}
+		\part How many patterns are there for groups containing three elements?
+		\begin{solution}
+			\par Only one, $C_3$.
+		\end{solution}
+
+		\part Containing one elements?
+		\begin{solution}
+			\par Only one, $\{e\} = 1$.
+		\end{solution}
+		
+		\part Containing four elements?
+		\begin{solution}
+			\par Two, $V_4$ and $C_4$.
+		\end{solution}
+	\end{parts}
+	
+	\question We saw earlier in this chapter that in the group $V_4$, the equation $RB=BR$ is true. In fact, for any two elements $a,b\in V_4$, the equation $ab=ba$ is true. That is, the order in which you combine elements does not matter. Consider each group whose multiplication table appears in Figure 4.7 (except $A_5$, whose details are to small to see). For which of those groups does the order of combining elements matter?
+	\begin{solution}
+		\par $S_3$, Quasihedral group with 16 elements.
+	\end{solution}
+
+	\question Groups in which he order of multiplication of elements does not matter are called commutative or abelian. Look through the groups in Group Explorer's group library, starting with the smallest, until you find one that is noncommutative. What is the name of the smallest noncummutative group?
+	\begin{solution}
+		$S_3$ of order 6.
+	\end{solution}
+
+	\question What visual pattern do the multiplication tables of commutative groups exhibit?
+ 	\begin{solution}
+		\par Diagonal symmetry.
+	\end{solution}
+
+	\question To go along with the other algebraic notation we've seen in this chapter, there is also an algebraic notation for generators. For instance, the group $C_5$, which appears in the first few exercises of this chapter, is generated by the element $a$. The standard notation for this is $C_5 = \langle a\rangle$. The $\langle a\rangle$ means ``what you can generate from $a$,'' and so the equation $C_5=\langle a\rangle$ is saying ``$C_5$ is the group generated from $a$.'' From Figure 4.3, we can write $V_4 = \langle R,B\rangle$, saying that $R$ and $B$ together generate $V_4$.
+	\par Show your understanding of this new notation by filling in the blanks below using however many elements are necessary to generate the group. Use as few elements as possible.
+	\begin{parts}
+		\part From the Cayley diagram in Exercise 4.4, we see that $Q_4 =\langle _ \rangle $
+		\begin{solution}
+			$Q_4 = \langle i, j\rangle$
+		\end{solution}
+
+		\part From the Cayley diagram in part (c) of Exercise 4.6, we see that $A_4 =\langle _ \rangle $
+		\begin{solution}
+			$A_4 = \langle a, x \rangle$
+		\end{solution}
+	\end{parts}
+	
+	\question Use the multiplication tables you constructed in Exercise 4.6 to determine the inverses for each element of each of the three groups from that problem.
+	\begin{parts}
+		\part In the cyclic group $C_5$, the inverses are
+		\begin{solution}
+			\par $e^{-1} = e, a^{-1} = a^4, (a^{2})^{-1} = a^{3}, \ldots$
+		\end{solution}
+
+		\part In the quaternion group $Q_4$, the inverses are
+		\begin{solution}
+			\par $1^{-1} = 1, i^{-1} = -i, j^{-1} = -j, k^{-1}=-k$
+			\par $(-1)^{-1} = -1, (-i)^{-1} = i, \ldots$
+		\end{solution}
+		
+		\part In the alternating group $A_4$, the inverses are
+		\begin{solution}
+			\par $e^{-1} = e, a^{-1} = a^2, b^{-1} = b^2, c^{-1} = c^2, \ldots$
+		\end{solution}
+	\end{parts}
+
+	\question Inverses can be used to solve equations. In the group $C_5$, to solve $a^2x=a$ for $x$, I can proceed as in high school algebra:
+	\par Computing $(a^2)^{-1} a$ in $C_5$ gives $x=a^4$.
+	\par Try solving each of these equation in $C_5$.
+	\begin{parts}
+		\part $a^3x = a^2$
+		\begin{solution}
+			\par $\Leftrightarrow x= a^4$
+		\end{solution}
+
+		\part $a^4a^2x = a$
+		\begin{solution}
+			\par $\Leftrightarrow ax = a$
+			\par $\Leftrightarrow x = e$
+		\end{solution}
+
+		\part $ax(a^3)^{-1} = e$
+		\begin{solution}
+			\par $\Leftrightarrow ax = a^3$
+			\par $\Leftrightarrow x = a^2$
+		\end{solution}
+	\end{parts}
+
+	\question 
+	\begin{parts}
+		\part If I have the equation $a^2x(a^2)^{-1} = a$ to solve as in the previous exercise, can I cancel the $a^2$ and the $(a^2)^{-1}$? Why or why not?
+		\begin{solution}
+			\par Yes, as $C_5$ is abelian.
+		\end{solution}
+
+		\part If I have a similar equation, but in the group $Q_4$ from Exercise 4.6, $ixi^{-1} = j$, can I cancel the $i$ and $i^{-1}$? Why or why not?
+		\begin{solution}
+			\par No, as it is not abelian. 
+			\par Note how $i\cdot j \cdot i^{-1} = k\cdot (-i) = -j \not = j$
+		\end{solution}
+	\end{parts}
+
+	\question Consider the equation $b^2\cdot t\cdot a^2 = y$ in the group $A_4$; I want to solve for $t$. The previous exercise as ia warning that I cannot simply proceed as follows. What should I do instead?
+	\begin{solution}
+		\par $\Leftrightarrow t\cdot a^2 = (b^2)^{-1}\cdot y = b\cdot y = c$
+		\par $\Leftrightarrow t = c\cdot (a^2)^{-1} = c\cdot a = b^2$
+	\end{solution}
+
+	\question Solve these equations for $t$.
+	\begin{parts}
+		\part In $Q_4, jitk^{-1} = -kj$
+		\begin{solution}
+			\par $\Leftrightarrow -kt = i\cdot k$
+			\par $\Leftrightarrow t = (-k)^{-1} \cdot (-j)$
+			\par $\Leftrightarrow t = k\cdot(-j) = i$
+		\end{solution}
+
+		\part In $A_4, t(b^2)^2 = xyz$
+		\begin{solution}
+			\par $\Leftrightarrow t b = e$
+			\par $\Leftrightarrow t = b^{-1} = b^2$
+		\end{solution}
+
+		\part In $S_3, rtf = e$
+		\begin{solution}
+			\par $\Leftrightarrow rt = f$
+			\par $\Leftrightarrow t = r^2\cdot f = fr$
+		\end{solution}
+	\end{parts}
+
+	\question Let's say you have a group $G$ with identity element $e$. Take any three elements $a,b,$ and $c$ in $G$.
+	\begin{parts}
+		\part What does the equation $ab=e$ say about the relationship between $a$ and $b$?
+		\begin{solution}
+			\par $a$ is the inverse of $b$ and vice versa.
+		\end{solution}
+
+		\part If both $ab=e$ and $ac = e$, can you use algebra to show $b=c$?
+		\begin{solution}
+			\par It follows that $ab=ac \Rightarrow b = a^{-1}ac = c$.
+		\end{solution}
+		
+		\part Can an element in a group have two different inverses?
+		\begin{solution}
+			\par No, since $a^{-1} \cdot a = \tilde{a^{-1}} a \Rightarrow a^{-1} = \tilde{a^{-1}}$.
+		\end{solution}
+	\end{parts}
+
+	\question The set of all integers (all positive and negative whole numbers, and zero) is often written als $\mathds{Z}$. Use Definition 4.2 to answer each of the following questions about $\mathds{Z}$.
+	\begin{parts}
+		\part Is it a group using ordinary addition as the operation?
+		\begin{solution}
+			\par Yes.
+		\end{solution}
+
+		\part Is it a group using ordinary multiplication as the operation?
+		\begin{solution}
+			\par No, there are inverses missing.
+		\end{solution}
+		
+		\part The even integers are sometimes written $2\mathds{Z}$, because they can be obtained by multiplying every integer by 2. If we think of $3\mathds{Z}, 4\mathds{Z}$, and in general any $n\mathds{Z}$ in the same way, for what integers $n$ is the set $n\mathds{Z}$ a group using ordinary addition as the operation?
+		\begin{solution}
+			\par $\forall n\in \mathds{Z}$.
+		\end{solution}
+	\end{parts}
+
+	\question The rational numbers (often written $\mathds{Q}$) are the set of fractions $\frac{a}{b}$, where $a$ and $b$ are integers (but $b\not = 0$). For example $\frac{1}{2}, \frac{-6}{11},$ and $\frac{50}{3}$ are all rational. Any integer, including zero, is rational, because you can just divide it by 1. For example, 10 is the rational number $\frac{10}{1}$.
+	\par Use Definition 4.2 to answer each of the following question about $\mathds{Q}$.
+	\begin{parts}
+		\part Is it a group using ordinary addition as the operation?
+		\begin{solution}
+			\par Yes.
+		\end{solution}
+		
+		\part Is it a group using ordinary multiplication as the operation?
+		\begin{solution}
+			\par No, zero has no inverse.
+		\end{solution}
+		
+		\part Call $\mathds{Q}^+$ the positive rational numbers (only those greater than zero). Is $\mathds{Q}^+$ a group using ordinary addition as the operation?
+		\begin{solution}
+			\par No, there is no identity and no inverses.
+		\end{solution}
+
+		\part Is $\mathds{Q}^+$ a group under ordinary multiplication?
+		\begin{solution}
+			\par Yes.
+		\end{solution}
+		
+		\part Call $\mathds{Q}^*$ the nonzero rational numbers (all positive and negative ones, only leaving out zero). Is $\mathds{Q}^*$ a group under ordinary addition?
+		\begin{solution}
+			\par No, there is no identity.
+		\end{solution}
+
+		\part Is $\mathds{Q}^*$ a group under ordinary multiplication?
+		\begin{solution}
+			\par Yes.
+		\end{solution}
+		
+		\part Why are groups like $\mathds{Q}, \mathds{Q}^+,$ and $\mathds{Q}^*$ difficult to visualize using multiplication tables and Cayley diagrams?
+		\begin{solution}
+			\par Because they are difficult to list\ldots
+		\end{solution}
+	\end{parts}
+\end{questions}
